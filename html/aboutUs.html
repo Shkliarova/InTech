@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>InTech</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-container">
+        <nav class="header-navigation">
+          <a href="./home.html" class="logo link header-logo">In<span class="header-accent-logo">Tech</span></a>
+          <ul class="list header-list">
+            <li><a class="list-item link" href="./home.html">Home</a></li>
+            <li><a class="list-item link" href="./services.html">Services</a></li>
+            <li><a class="list-item link" href="./team.html">Team</a></li>
+            <li><a class="list-item link current-page" href="./aboutUs.html">About Us</a></li>
+            <li><a class="list-item link" href="./contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="adress-title">
+          <ul class="list adress-list">
+          <li><a class="adress-item link" href="mailto:infinitysolutions420@gmail.com">infinitysolutions420@gmail.com</a></li>
+          <li><a class="adress-item link" href="tel:+918595231269">+91-8595231269</a></li>
+          </ul>
+        </address>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu-icon" width="32" height="22">
+            <use href="../images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+  
+  
+        <div class="mob-menu visually-hidden" data-menu>
+          <div><button type="button" class="mob-menu-close" data-menu-close>
+            <svg class="close-icon" width="8" height="8">
+              <use href="../images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          <ul class="list mob-menu-list">
+            <li><a class="mob-menu-item link" href="./home.html">Studio</a></li>
+            <li><a class="mob-menu-item link" href="./services.html">Services</a></li>
+            <li><a class="mob-menu-item link" href="./team.html">Team</a></li>
+            <li><a class="mob-menu-item link this-page" href="./aboutUs.html">About Us</a></li>
+            <li><a class="mob-menu-item link" href="./contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <address class="menu-adress-title">
+          <ul class="list menu-adress-list">
+          <li><a class="menu-mail-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="menu-tel-item link" href="tel:+00000000000">+00 (000) 000-00-00</a></li>
+          </ul>
+        </address>
+        <ul class="list footer-soc-list menu-soc-list">
+          <li class="soc-icon-item">
+            <a class="link footer-link" href="" target="_blank" rel="noreferrer noopener nofollow">
+                    <svg class="footer-icon" width="24" height="24">
+                      <use href="../images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+          </li>
+          <li class="soc-icon-item">
+            <a class="link footer-link" href="" target="_blank" rel="noreferrer noopener nofollow">
+                    <svg class="footer-icon" width="24" height="24">
+                      <use href="../images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+      </div>
+      </header>
+    
+      <main>
+        <!-- ABOUT US -->
+        <section class="about-us">
+            <div class="container">
+              <h1 class="about-title">Meet Our Team</h1>
+              <p class="simple-text about-text">We are proud to introduce the talented professionals who drive our success.</p>
+              <div class="team-cont">
+                <div class="team-member" onclick="toggleBio('bio1')">
+                  <div class="member-header">
+                    <h3 class="member-name">Ravi Patel</h3>
+                    <p class="member-role">CEO</p>
+                    <button class="toggle-bio arrow" data-bio="bio1">▼</button>
+                  </div>
+                  <div class="member-bio visually-hidden" id="bio1">
+                    <p>Ravi Patel is the visionary CEO of our company, bringing over 15 years of expertise in the tech industry. He has led numerous successful projects, transforming innovative ideas into tangible results. His leadership and strategic foresight have been instrumental in positioning our company as a leader in cutting-edge technology. Ravi actively builds high-performance teams and continuously explores new avenues for achieving success, ensuring that our company remains at the forefront of innovation.</p>
+                  </div>
+                </div>
+                <div class="team-member" onclick="toggleBio('bio2')">
+                  <div class="member-header">
+                    <h3 class="member-name">Maya Kapoor</h3>
+                    <p class="member-role">Frontend Developer</p>
+                    <button class="toggle-bio arrow" data-bio="bio2">▼</button>
+                  </div>
+                  <div class="member-bio visually-hidden" id="bio2">
+                    <p>Maya Kapoor is a talented frontend developer with a passion for creating user-friendly and intuitive interfaces. With extensive experience in modern frontend technologies like React and Vue, she has a keen eye for design and user experience. Maya believes that a website’s true value lies in its usability and accessibility, and her work consistently reflects this commitment to excellence. She focuses on making digital products that are both functional and enjoyable for users to interact with.</p>
+                  </div>
+                </div>
+                <div class="team-member" onclick="toggleBio('bio3')">
+                  <div class="member-header">
+                    <h3 class="member-name">Ella Johnson</h3>
+                    <p class="member-role">Frontend Developer</p>
+                    <button class="toggle-bio arrow" data-bio="bio3">▼</button>
+                  </div>
+                  <div class="member-bio visually-hidden" id="bio3">
+                    <p>Ella Johnson excels in developing responsive, dynamic, and visually appealing websites that provide seamless experiences for users. Her expertise in JavaScript, CSS, and modern frontend frameworks enables her to create high-quality, cross-platform websites. Ella enjoys solving complex challenges and turning them into intuitive web solutions that are both highly functional and aesthetically pleasing. She is dedicated to making websites that are not only effective but also engaging for users.</p>
+                  </div>
+                </div>
+                <div class="team-member" onclick="toggleBio('bio4')">
+                  <div class="member-header">
+                    <h3 class="member-name">Sophia Martinez</h3>
+                    <p class="member-role">UI Designer</p>
+                    <button class="toggle-bio arrow" data-bio="bio4">▼</button>
+                  </div>
+                  <div class="member-bio visually-hidden" id="bio4">
+                    <p>Sophia Martinez is an innovative UI designer passionate about translating complex ideas into elegant, user-centered designs. With a strong background in visual design, she creates interfaces that are not only functional but also visually appealing and engaging. Sophia thrives on designing intuitive navigation and smooth user experiences that enhance usability and user satisfaction. Her work focuses on crafting digital solutions that are both beautiful and easy to use, ensuring a seamless journey for every user.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>          
+      </main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-container">
+    <div class="studio-info">
+    <a class="logo link footer-logo" href="./home.html">In<span class="footer-accent-logo">Tech</span></a>
+    <p class="footer-text">
+        Innovation and Technology to Drive Your Business Growth!
+    </p>
+  </div>
+  <div class="contacts-info">
+    <p class="footer-second-paragraph">Social media</p>
+    <ul class="list footer-soc-list">
+      <li class="soc-icon-item">
+        <a class="link footer-link" href="" target="_blank" rel="noreferrer noopener nofollow">
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="../images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+      </li>
+      <li class="soc-icon-item">
+        <a class="link footer-link" href="" target="_blank" rel="noreferrer noopener nofollow">
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="../images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+  </footer>
+  <script type="module" src="../js/aboutUs.js"></script>
+  <script type="module" src="../js/mobile-menu.js"></script>
+</body>
+</html>
