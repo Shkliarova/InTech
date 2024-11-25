@@ -272,6 +272,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 72px;
+    align-items: center;
 }
 
 .team-item{
@@ -354,12 +355,12 @@ body{
 
 .advantages-list{
     display: flex;
-    gap: 44px 40px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .advantages-list-item{
-    width: calc((100% - 40px) / 2);
+    width: 100%;
     display: flex;
 }
 
@@ -375,6 +376,8 @@ body{
     padding: 12px;
     border: 2px solid var(--accent-color);
     border-radius: 15%;
+    max-width: 66px;
+    height: 40px;
 }
 
 .list-title{
@@ -406,9 +409,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    min-width: 300px;
   }
   
   .team-member {
@@ -421,6 +424,7 @@ body{
     overflow: hidden;
     transition: box-shadow 0.3s, height 0.4s ease;
     height: 18px;
+    width: 100%;
 }
 
 .team-member.open {
@@ -605,6 +609,7 @@ body{
 .footer-soc-list{
     display: flex;
     gap: 16px;
+    margin-bottom: 40px;
 }
 
 .footer-link{
@@ -637,12 +642,13 @@ body{
 
 .services-list{
     display: flex;
-    flex-wrap: wrap;
-    gap: 48px 24px;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
 }
 
 .services-list-item{
-    width: calc((100% - 48px) / 3);
+    width: 370px;
 }
 
 .services-link:hover .services-cover-text{
@@ -736,16 +742,16 @@ body{
         padding: 0;
     }
 
+    .header-logo{
+        margin-right: 32px;
+    }
+
     .mob-menu{
         display: none;
     }
 
     .menu-open-btn{
         display: none;
-    }
-
-    .header-logo{
-        margin-right: 120px;
     }
 
     .header-navigation{
@@ -857,6 +863,17 @@ body{
       .contact-form {
         padding: 0 15px;
       }
+    
+      /* advantages */
+      .advantages-list{
+        flex-direction: row;
+        gap: 44px 40px;
+        flex-wrap: wrap;
+    }
+    
+    .advantages-list-item{
+        width: calc((100% - 40px) / 2);
+    }
 
     /* footer */
     .footer-container{
@@ -942,6 +959,17 @@ body{
       .member-role {
         font-size: 12px;
       }
+
+    /* services */
+    .services-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 48px 24px;
+    }
+    
+    .services-list-item{
+        width: calc((100% - 48px) / 3);
+    }
 
     /* footer */
     .footer-container{
